@@ -16,11 +16,14 @@ const HomeScreen: React.FC = () => {
     <View style={styles.sectionContainer}>
       <Text style={styles.sectionTitle}>Home Screen</Text>
       <Button
-        onPress={() => navigation.navigate('StackNavigator')}
         title="Stack Navigation"
+        onPress={() => navigation.navigate('StackNavigator')}
+      />
+      <Button
+        title="Tab Navigation"
+        onPress={() => navigation.navigate('TabNavigator')}
       />
       {/* <Button title="Drawer Navigation" /> */}
-      {/* <Button title="Tab Navigation" /> */}
     </View>
   );
 };
@@ -31,13 +34,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,
+    gap: 20,
   },
   sectionTitle: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
     letterSpacing: 2,
-    marginBottom: 10,
   },
 });
 
