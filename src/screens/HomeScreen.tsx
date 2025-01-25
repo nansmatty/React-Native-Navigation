@@ -23,7 +23,10 @@ const HomeScreen: React.FC = () => {
         title="Tab Navigation"
         onPress={() => navigation.navigate('TabNavigator')}
       />
-      {/* <Button title="Drawer Navigation" /> */}
+      <Button
+        title="Drawer Navigation"
+        onPress={() => navigation.navigate('DrawerNavigator')}
+      />
     </View>
   );
 };
